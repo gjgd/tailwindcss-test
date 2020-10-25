@@ -8,8 +8,10 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
-}
+  plugins: [require('tailwindcss'), require('autoprefixer')],
+  purge: {
+    enabled: true,
+    mode: 'layers',
+    content: ['./**/*.html'],
+  },
+};
