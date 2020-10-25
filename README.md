@@ -8,3 +8,4 @@ npm start
 open index.html
 ```
 
+![Example site](./site.png)
